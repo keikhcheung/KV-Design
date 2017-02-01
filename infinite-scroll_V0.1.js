@@ -216,16 +216,13 @@ var tumblrAutoPager = {
             d = document.createElement("div");
             d.className = "tumblrAutoPager_page_info";
             d.innerHTML = "";
-            var table_td = document.createElement('td');
-            tAP.pp.appendChild(d);
+            var TBLE_FOUND = document.getElementById("TBLE_HERE");
+            var CELL_ADDED = TBLE_FOUND.insertCell(-1);
+            CELL_ADDED.innerHTML = tAP.pp.appendChild(d);
             for (var i = 0; i < posts.length; i++) {
-                var TBLE_FOUND = document.getElementById("TBLE_HERE");
-                var CELL_ADDED = TBLE_FOUND.insertCell(-1);
-                CELL_ADDED.innerHTML = tAP.pp.appendChild(posts[i]) +
-                
 //                document.createElement('td');
-//                tAP.pp.appendChild(posts[i]);
-              	tAP.autopagerize_page_element ;
+                tAP.pp.appendChild(posts[i]);
+              	tAP.autopagerize_page_element
 //                document.createElement('/td');
             }
             var footer = $("footer");
