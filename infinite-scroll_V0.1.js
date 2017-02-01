@@ -219,7 +219,7 @@ var tumblrAutoPager = {
             var table_td = document.createElement('td');
             tAP.pp.appendChild(d);
             for (var i = 0; i < posts.length; i++) {
-                tAP.pp.appendChild(table_td(posts[i]));
+                table_td(tAP.pp.appendChild(posts[i]));
               	tAP.autopagerize_page_element
             }
             var footer = $("footer");
