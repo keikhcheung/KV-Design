@@ -221,11 +221,11 @@ var tumblrAutoPager = {
             for (var i = 0; i < posts.length; i++) {
                 var TBLE_FOUND = document.getElementById("TBLE_HERE");
                 var CELL_ADDED = TBLE_FOUND.insertCell(-1);
-                CELL_ADDED.innerHTML = tAP.pp.appendChild(posts[i]);
+                CELL_ADDED.innerHTML = tAP.pp.appendChild(posts[i]) +
                 
 //                document.createElement('td');
 //                tAP.pp.appendChild(posts[i]);
-              	tAP.autopagerize_page_element
+              	tAP.autopagerize_page_element ;
 //                document.createElement('/td');
             }
             var footer = $("footer");
